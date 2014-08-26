@@ -10,18 +10,13 @@
 Pod::Spec.new do |s|
   s.name             = "JWStackedBarChart"
   s.version          = "0.1.0"
-  s.summary          = "A short description of JWStackedBarChart."
-  s.description      = <<-DESC
-                       An optional longer description of JWStackedBarChart
-
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
-                       DESC
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/JWStackedBarChart"
+  s.summary          = "A implementation of Stacked Bar Chart."
+  s.description      = "Consists of several bar segments. Each bar segment can set Value and Color. Will be shown with a  percentage label on the graph."
+  s.homepage         = "https://github.com/Jowyer/JWStackedBarChart"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Jowyer" => "jowyer@gmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/JWStackedBarChart.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/Jowyer/JWStackedBarChart.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.platform     = :ios, '7.0'
