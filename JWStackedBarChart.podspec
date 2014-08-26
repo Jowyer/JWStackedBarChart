@@ -9,8 +9,8 @@
 
 Pod::Spec.new do |s|
   s.name             = "JWStackedBarChart"
-  s.version          = "0.1.1"
-  s.summary          = "A implementation of Stacked Bar Chart."
+  s.version          = "0.1.2"
+  s.summary          = "An implementation of Stacked Bar Chart."
   s.description      = "Consists of several bar segments. Each bar segment can set Value and Color. Will be shown with a  percentage label on the graph."
   s.homepage         = "https://github.com/Jowyer/JWStackedBarChart"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
