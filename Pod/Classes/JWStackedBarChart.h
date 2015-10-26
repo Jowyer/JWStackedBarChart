@@ -18,7 +18,7 @@
 
 @property(nonatomic, strong) NSArray *segmentsArray;
 @property(nonatomic, strong) NSDictionary *attributesDic;
-
+@property(assign) BOOL showPercentages;
 - (id)initWithFrame:(CGRect)frame IsVertical:(BOOL)isVertical;
 -(void)beginDrawing;
 
