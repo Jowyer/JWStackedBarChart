@@ -33,6 +33,7 @@
 {
     BOOL isVertical;
 }
+@synthesize showPercentages;
 
 - (id)initWithFrame:(CGRect)frame IsVertical:(BOOL)yesToVertical
 {
@@ -84,12 +85,16 @@
         {
             float startX = stringWidth >= self.frame.size.width ? 0 : (self.frame.size.width - stringWidth)/2;
             float startY = (dimension - stringHeight) / 2;
-            [percentString drawAtPoint:CGPointMake(startX, startY + offset) withAttributes:self.attributesDic];
+            if (showPercentages) {
+              [percentString drawAtPoint:CGPointMake(startX, startY + offset) withAttributes:self.attributesDic];
+            }
         }
         else
         {
             float startX = stringWidth >= dimension ? 0 : (dimension - stringWidth)/2;
+            if (showPercentages) {
             [percentString drawAtPoint:CGPointMake(startX + offset, (self.frame.size.height - stringHeight)/2) withAttributes:self.attributesDic];
+            }
         }
         
         offset += dimension;
